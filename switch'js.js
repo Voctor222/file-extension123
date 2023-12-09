@@ -1,42 +1,42 @@
-const sunday=1
-  const monday=2
-  const tuesday=3
-  const wednesday=4
-  const thursday=5
-  const friday=6 
-  const sartuday=7
+  const sunday=2
+  const monday=4
+  const tuesday=6
+  const wednesday=8
+  const thursday=10
+  const friday=12
+  const sartuday=14
+
 const dayName=(days)=>{
-  
-switch (days) {
-  case 1:
-    dayName = 'Sunday';
-    break;
+  switch (days){
   case 2:
-    dayName = 'Monday';
-    break;
-  case 3:
-    dayName = 'Tuesday';
+    return "Sunday";
     break;
   case 4:
-    dayName = 'Wednesday';
-    break;
-  case 5:
-    dayName = 'Thursday';
+    return "Monday";
     break;
   case 6:
-    dayName = 'Friday';
+    return "Tuesday";
     break;
-  case 7:
-    dayName = 'Saturday';
+  case 8:
+    return "Wednesday";
+    break;
+  case 10:
+    return "Thursday";
+    break;
+  case 12:
+    return "Friday";
+    break;
+  case 14:
+    return "Saturday";
     break;
   default:
-    dayName = 'Invalid day';
+    return "Invalid day"
+  }
 }
-}
-console.log('day1:',dayName(sunday))
-console.log('day2:',dayName(monday))
-console.log('day3:',dayName(tuesday))
-console.log('day4:',dayName(wednesday))
-console.log('day5:',dayName(thursday))
-console.log('day6:',dayName(friday))
-console.log('day7:',dayName(sartuday))
+console.log("day1:",dayName(sunday))
+console.log("day2:",dayName(monday))
+console.log("day3:",dayName(tuesday))
+console.log("day4:",dayName(wednesday))
+console.log("day5:",dayName(thursday))
+console.log("day6:",dayName(friday))
+console.log("day7:",dayName(sartuday))
